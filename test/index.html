@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <input id="input" type="text">
+    <script src="/build/build.js"></script>
+    <script>
+      var ObjectInputElement = require('object-input-element');
+      var test = require('simple-test');
+      var dom = require('dom-helper');
+
+      var input = document.getElementById('input');
+      var objectInput = new ObjectInputElement(input);
+
+      test('objectInputElement.tag', function () {
+        test.eq(objectInput.tag, 'input');
+      });
+
+      test('objectInputElement.value', function () {
+        objectInput.value = 'foo';
+        test.eq(objectInput.value, 'foo');
+        test.eq(input.value, 'foo');
+      });
+      </script>
+  </body>
+</html>

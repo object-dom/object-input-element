@@ -1,0 +1,20 @@
+{
+  "name": "object-input-element",
+  "repo": "object-dom/object-input-element",
+  "description": "Object INPUT element",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "object-dom/object-element": "*"
+  },
+  "development": {
+    "shallker/simple-test": "*",
+    "shallker/dom-helper": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/object-input-element.js"
+  ]
+}
